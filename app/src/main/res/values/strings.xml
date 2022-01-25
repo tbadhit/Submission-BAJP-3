@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Submission-BAJP-1</string>
+
+    <string name="desc">Description</string>
+    <string name="overview">Overview</string>
+    <string name="title">title</string>
+    <string name="genre">Genre</string>
+    <string name="releaseYear">2021</string>
+    <string name="duration">3h 01min</string>
+    <string name="tab_1">MOVIE</string>
+    <string name="tab_2">TV SHOW</string>
+    <string name="poster">Gambar poster</string>
+</resources>
