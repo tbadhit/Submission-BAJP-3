@@ -3,20 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_favorite.xml" value="0.1545" />
+        <entry key="app/src/main/res/drawable/ic_favorite_border.xml" value="0.1545" />
+        <entry key="app/src/main/res/drawable/ic_language_grey.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_newest.xml" value="0.13" />
+        <entry key="app/src/main/res/drawable/ic_oldest.xml" value="0.13" />
+        <entry key="app/src/main/res/drawable/ic_random.xml" value="0.13" />
+        <entry key="app/src/main/res/drawable/ic_sort_black.xml" value="0.13" />
         <entry key="app/src/main/res/font/poppins.xml" value="0.12129629629629629" />
         <entry key="app/src/main/res/font/poppins_bold.xml" value="0.12129629629629629" />
         <entry key="app/src/main/res/font/poppins_medium.xml" value="0.12777777777777777" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.19037471785560814" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.21554565429687497" />
         <entry key="app/src/main/res/layout/activity_detail_movie.xml" value="0.19844854742383494" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.10697674418604651" />
+        <entry key="app/src/main/res/layout/activity_favorite.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.23868603373682779" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/content_detail_movie.xml" value="0.22603906753175537" />
-        <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_tv_show.xml" value="0.19947916666666668" />
-        <entry key="app/src/main/res/layout/items.xml" value="0.3671875" />
+        <entry key="app/src/main/res/layout/fragment_favorite_movie.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_favorite_tv_show.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/fragment_movie.xml" value="0.17281188964843752" />
+        <entry key="app/src/main/res/layout/fragment_tv_show.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_favorite.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/items.xml" value="0.40552493311079063" />
         <entry key="app/src/main/res/layout/items_movie.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/items_tv_show.xml" value="0.19947916666666668" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="1.2107142857142856" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_app.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_app_round.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15" />
       </map>
     </option>
   </component>

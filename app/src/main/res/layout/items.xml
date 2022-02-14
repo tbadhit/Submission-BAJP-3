@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_title_movie"
+                android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
@@ -57,21 +57,21 @@
                 tools:text="@string/title" />
 
             <TextView
-                android:id="@+id/tv_genre"
+                android:id="@+id/tv_release_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 app:layout_constraintStart_toEndOf="@id/img_movie"
-                app:layout_constraintTop_toBottomOf="@id/tv_title_movie"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
                 tools:ignore="NotSibling"
-                tools:text="@string/genre" />
+                tools:text="@string/releaseDate" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="50dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_30dp"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="10dp"
@@ -80,17 +80,35 @@
                     app:cardCornerRadius="50dp"
                     app:cardElevation="4dp"
                     app:layout_constraintStart_toEndOf="@id/img_movie"
-                    app:layout_constraintTop_toBottomOf="@id/tv_genre"
+                    app:layout_constraintTop_toBottomOf="@id/tv_release_date"
                     tools:ignore="NotSibling">
 
-                    <TextView
-                        android:id="@+id/tv_year"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/poppins"
-                        tools:ignore="NotSibling"
-                        tools:text="@string/releaseYear" />
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_language_grey"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tv_language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            tools:ignore="NotSibling"
+                            tools:text="@string/language" />
+
+                    </LinearLayout>
 
 
                 </androidx.cardview.widget.CardView>
@@ -133,7 +151,7 @@
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/dimen_30dp"
                 android:layout_marginStart="5dp"
                 android:layout_marginBottom="5dp"
@@ -145,6 +163,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
                     android:orientation="horizontal"
                     tools:ignore="UseCompoundDrawables">
 
@@ -152,17 +172,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dimen_16dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_time_grey"
+                        android:src="@drawable/ic_vote_grey"
                         tools:ignore="ContentDescription" />
 
                     <TextView
-                        android:id="@+id/tv_duration"
+                        android:id="@+id/tv_rate_count"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
                         android:fontFamily="@font/poppins"
                         tools:ignore="NotSibling"
-                        tools:text="@string/duration" />
+                        tools:text="@string/rateCount" />
 
                 </LinearLayout>
 

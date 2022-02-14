@@ -6,6 +6,8 @@ import androidx.annotation.StringRes
 import com.google.android.material.tabs.TabLayoutMediator
 import com.tbadhit.submission_bajp_1.R
 import com.tbadhit.submission_bajp_1.databinding.ActivityHomeBinding
+import com.tbadhit.submission_bajp_1.ui.favorite.FavoriteActivity
+import com.tbadhit.submission_bajp_1.utils.startActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -15,7 +17,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.toolBarHome)
+
+        binding.imgFavorite.setOnClickListener {
+            startActivity<FavoriteActivity>()
+        }
 
         val sectionsPagerAdapter = SectionsPagerAdapter(this)
         val viewPager = binding.viewPager

@@ -1,10 +1,12 @@
 package com.tbadhit.submission_bajp_1.ui.tvshow
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.tbadhit.submission_bajp_1.data.ItemEntity
-import com.tbadhit.submission_bajp_1.utils.DataTvShow
+import androidx.paging.PagedList
+import com.tbadhit.submission_bajp_1.data.source.MovieRepository
+import com.tbadhit.submission_bajp_1.data.source.local.entity.MovieEntity
+import com.tbadhit.submission_bajp_1.vo.Resource
 
-class TvShowViewModel : ViewModel() {
-    fun getTvShows(): List<ItemEntity> = DataTvShow.generateDummyTvShow()
-    fun getTvShow(id: Int): ItemEntity = DataTvShow.generateDummyTvShow()[id]
+class TvShowViewModel(private val movieRepository: MovieRepository) : ViewModel() {
+    fun getTvShows(sort: String): LiveData<Resource<PagedList<MovieEntity>>> = movieRepository.getAllTvShow(sort)
 }

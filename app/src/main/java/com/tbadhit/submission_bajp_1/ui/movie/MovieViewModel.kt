@@ -1,10 +1,12 @@
 package com.tbadhit.submission_bajp_1.ui.movie
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.tbadhit.submission_bajp_1.data.ItemEntity
-import com.tbadhit.submission_bajp_1.utils.DataMovie
+import androidx.paging.PagedList
+import com.tbadhit.submission_bajp_1.data.source.MovieRepository
+import com.tbadhit.submission_bajp_1.data.source.local.entity.MovieEntity
+import com.tbadhit.submission_bajp_1.vo.Resource
 
-class MovieViewModel : ViewModel() {
-    fun getMovies(): List<ItemEntity> = DataMovie.generateDummyMovie()
-    fun getMovie(id: Int): ItemEntity = DataMovie.generateDummyMovie()[id]
+class MovieViewModel(private val movieRepository: MovieRepository) : ViewModel() {
+    fun getMovies(sort: String): LiveData<Resource<PagedList<MovieEntity>>> = movieRepository.getAllMovies(sort)
 }
